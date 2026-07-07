@@ -1,0 +1,85 @@
+{
+  "persons": [
+    {
+      "name": "Arto Hellas",
+      "number": "040-123456",
+      "id": "1"
+    },
+    {
+      "name": "Ada Lovelace",
+      "number": "39-44-5323523",
+      "id": "2"
+    },
+    {
+      "name": "Dan Abramov",
+      "number": "12-43-234345",
+      "id": "3"
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "39-23-6423122",
+      "id": "4"
+    },
+    {
+      "name": "John Stamos",
+      "number": "1-111-1111",
+      "id": "mgKJpuatFvQ"
+    },
+    {
+      "name": "Johnny Bravo",
+      "number": "999-9999",
+      "id": "Y0M0MXNZrQ8"
+    },
+    {
+      "name": "s",
+      "number": "wwwww",
+      "id": "PU24VfMq-2w"
+    },
+    {
+      "name": "b",
+      "number": " b",
+      "id": "rDZGqB1meRg"
+    },
+    {
+      "name": "asdf",
+      "number": "asdf",
+      "id": "WrvJNoEnIGc"
+    },
+    {
+      "name": "kkkkk",
+      "number": "kkkkk",
+      "id": "xc4GhQ7oO1U"
+    },
+    {
+      "name": "l",
+      "number": "l",
+      "id": "WNE_MGJtgrs"
+    },
+    {
+      "name": "fff",
+      "number": "fff",
+      "id": "Bh5tLnSVggg"
+    },
+    {
+      "name": "bobby",
+      "number": "999",
+      "id": "Qhwinnbs6DQ"
+    },
+    {
+      "name": "jul",
+      "number": "adsf",
+      "id": "3_17cl8t6Rw"
+    },
+    {
+      "name": "joji",
+      "number": "y777",
+      "id": "jMdO_1T_CnY"
+    },
+    {
+      "name": "spongebob",
+      "number": "92",
+      "id": "pv1D2Tyyj58"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
