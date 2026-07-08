@@ -35,10 +35,6 @@ let persons = [
     }
 ]
 
-app.get('/', (request, response) => {
-  response.send("<h1>Test</h1>")
-})
-
 app.get('/info', (request, response) => {
   const dateNow = new Date().toString()
   const phoneBookSize = persons.length
