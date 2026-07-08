@@ -34,28 +34,28 @@ const App = () => {
       if(confirm(`${newName} is already added to phonebook, replace the
         old number with a new one?`)) {
         personService.updateNumber(duplicate[0], newNumber)
-          .then(() => {
-            personService.getAll().then(response => setPersons(response))
-            setNewName('')
-            setNewNumber('')
-            setNotification({
-              type: 'success',
-              text: `Updated ${nameObj.name}`
-            })
-            setTimeout(() => {
-              setNotification(null)
-            }, 5000)
+        .then(() => {
+          personService.getAll().then(response => setPersons(response))
+          setNewName('')
+          setNewNumber('')
+          setNotification({
+            style: 'success',
+            text: `Updated ${nameObj.name}`
           })
-          .catch(() => {
-            setNotification({
-              type: 'error',
-              text: `${nameObj.name} has already been deleted`
-            })
-            personService.getAll().then(response => setPersons(response))
-            setTimeout(() => {
-              setNotification(null)
-            }, 5000)
+          setTimeout(() => {
+            setNotification(null)
+          }, 5000)
+        })
+        .catch(() => {
+          setNotification({
+            style: 'error',
+            text: `${nameObj.name} has already been deleted`
           })
+          personService.getAll().then(response => setPersons(response))
+          setTimeout(() => {
+            setNotification(null)
+          }, 5000)
+        })
       }
       return
     }
@@ -64,7 +64,10 @@ const App = () => {
       setPersons(persons.concat(returnedPerson))
       setNewName('')
       setNewNumber('')
-      setNotification(`Added ${nameObj.name}`)
+      setNotification({
+        style: 'success',
+        text: `Added ${nameObj.name}`
+      })
       setTimeout(() => {
         setNotification(null)
       }, 5000)

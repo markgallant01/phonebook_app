@@ -66,9 +66,9 @@ app.post('/api/persons', (request, response) => {
 
   // verify no duplicate names
   const matches = persons.filter(person => person.name === postData.name)
-  if (matches) {
+  if (matches.length > 0) {
     return response.status(400).json({
-      error: "Name already in phonebook"
+      error: "Name already in phonebook",
     })
   }
 
