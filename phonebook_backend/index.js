@@ -8,6 +8,7 @@ morgan.token('data', (request) => {
 const app = express()
 app.use(express.json())
 app.use(morgan(':method :url :status :total-time[2] :data'))
+app.use(express.static('dist'))
 
 const PORT = process.env.PORT || 3001
 
